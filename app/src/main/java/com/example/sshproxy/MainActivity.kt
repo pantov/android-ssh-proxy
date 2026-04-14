@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity() {
 
         setupManager = SetupManager(this)
 
-        // Auto-select server if there is only one
+        // Auto-select server if there is only one  
         lifecycleScope.launch {
             val serverRepository = ServerRepository(this@MainActivity)
             val servers = serverRepository.getAllServers().first()
